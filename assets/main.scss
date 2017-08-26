@@ -7,3 +7,10 @@ $font-stack: "San Fracisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
 * {
 	font-family: $font-stack;
 }
+
+body > header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+}
