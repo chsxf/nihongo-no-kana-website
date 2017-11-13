@@ -1,0 +1,11 @@
+{% if lang == "fr" %}
+    {% assign url_suffix = "/fr/" %}
+{% else %}
+    {% assign url_suffix = "" %}
+{% endif %}
+
+<ul>
+	<li><a href="{{ url_suffix | relative_url }}">Download</a></li>
+	<li><a href="{{ "about" | append: url_suffix | relative_url }}">About</a></li>
+	<li><a href="{{ "contact" | append: url_suffix | relative_url }}">Contact</a></li>
+</ul>

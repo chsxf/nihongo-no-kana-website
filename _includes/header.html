@@ -1,18 +1,10 @@
-<header>
-  <nav class="navbar navbar-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a href="/" class="navbar-brand mr-auto">{{ site.title }}</a>
-    <span class="nav-fill"></span>
-    <a href="/" class="navbar-link my-lg-0">Français</a>
-    <a href="/" class="navbar-link">English</a>
-  </nav>
+<div id="photo-background" style="background-image: url('{{ "/assets/img/background.jpg" | relative_url }}')"></div>
 
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h4 class="text-white">Collapsed content</h4>
-      <span class="text-muted">Toggleable via the navbar brand.</span>
-    </div>
-  </div>
-</header>
+<main id="main-container">
+	<div id="page-menu">
+		<div>
+			{% include menu.html %}
+		</div>
+	</div>
+	
+	<div id="page-content">

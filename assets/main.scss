@@ -2,15 +2,80 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$font-stack: "San Fracisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$fontStack: 'Roboto', sans-serif;
 
 * {
-	font-family: $font-stack;
+	font-family: $fontStack;
 }
 
-body > header {
+body {
+	margin: 0;
+	height: 100vh;
+	background: rgb(254, 115, 41);
+	background: linear-gradient(to bottom, rgb(254, 115, 41), rgb(203, 92, 33));
+}
+
+#photo-background {
+	background-size: cover;
+	background-repeat: none;
+	background-blend-mode: overlay;
+	opacity: 0.5;
+}
+
+#main-container, #photo-background {
 	position: absolute;
 	left: 0;
 	top: 0;
 	right: 0;
+	bottom: 0;
+}
+
+#page-menu {
+	position: absolute;
+	
+	left: 0;
+	top: 0;
+	bottom: 0;
+	
+	width: 30%;
+	min-width: 240px;
+	min-height: 640px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+#page-menu > div {
+	width: 33%;
+	min-width: 240px;
+	min-height: 640px;
+	padding: 100px 20px;
+	margin: 0 0 0 auto;
+	box-sizing: border-box;
+}
+
+#page-content {
+	position: absolute;
+	
+	right: 0;
+	top: 0;
+	bottom: 0;
+	
+	width: 70%;
+	min-width: 400px;
+		
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#page-content > div {
+	width: 75%;
+	min-width: 400px;
+	min-height: 640px;
+	box-sizing: border-box;
+	padding: 20px;
 }
