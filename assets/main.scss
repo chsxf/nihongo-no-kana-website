@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$fontStack: 'Roboto', sans-serif;
+$fontStack: 'SF Compact Display', sans-serif;
 
 * {
 	font-family: $fontStack;
@@ -11,71 +11,62 @@ $fontStack: 'Roboto', sans-serif;
 body {
 	margin: 0;
 	height: 100vh;
-	background: rgb(254, 115, 41);
-	background: linear-gradient(to bottom, rgb(254, 115, 41), rgb(203, 92, 33));
+	background: white;
 }
 
-#photo-background {
-	background-size: cover;
-	background-repeat: none;
-	background-blend-mode: overlay;
-	opacity: 0.5;
-}
-
-#main-container, #photo-background {
+#main-container {
 	position: absolute;
 	left: 0;
 	top: 0;
 	right: 0;
 	bottom: 0;
-}
-
-#page-menu {
-	position: absolute;
 	
-	left: 0;
-	top: 0;
-	bottom: 0;
-	
-	width: 30%;
-	min-width: 240px;
-	min-height: 640px;
-	
-	display: flex;
-	flex-direction: column;
-	justify-content: center;	
-	
-	background-color: rgba(255, 255, 255, 0.9);
-}
-
-#page-menu > div {
-	width: 33%;
-	min-width: 240px;
-	min-height: 640px;
-	padding: 100px 20px;
-	margin: 0 0 0 auto;
-	box-sizing: border-box;
-}
-
-#page-content {
-	position: absolute;
-	
-	right: 0;
-	top: 0;
-	bottom: 0;
-	
-	width: 70%;
-	min-width: 400px;
-		
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-#page-content > div {
-	width: 75%;
-	min-width: 400px;
-	min-height: 640px;
-	box-sizing: border-box;
-	padding: 20px;
+#page-content {
+	position: relative;
+	
+	width: 760px;
+	
+	min-height: 860px;
+	
+	margin: 0 auto;
+	text-align: center;
+}
+
+#icon-app-store-badge, #icon-facebook {
+	display: block;
+	margin-top: 20px;
+}
+
+#main-menu {
+	text-align: center;
+	margin: 20px 0;
+}
+
+#main-menu a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #ff8000;
+}
+
+#main-menu a:hover {
+	color: black;
+}
+
+h1 {
+	margin: 0;
+	font-weight: normal;
+}
+
+h2#version-label {
+	margin: 0;
+	
+	font-weight: normal;
+	font-size: 18px;
+	
+	color: #ff8000;
 }

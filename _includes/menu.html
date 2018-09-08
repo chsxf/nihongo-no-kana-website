@@ -1,11 +1,16 @@
 {% if lang == "fr" %}
     {% assign url_suffix = "/fr/" %}
+    {% assign privacy_label = "Politique de confidentialité" %}
+    {% assign imprint_label = "Mentions légales" %}
+    {% assign allrights_label = "Tous droits réservés" %}
 {% else %}
     {% assign url_suffix = "" %}
+    {% assign privacy_label = "Privacy Policy" %}
+    {% assign imprint_label = "Imprint" %}
+    {% assign allrights_label = "All rights reserved" %}
 {% endif %}
 
-<ul>
-	<li><a href="{{ url_suffix | relative_url }}">Download</a></li>
-	<li><a href="{{ "about" | append: url_suffix | relative_url }}">About</a></li>
-	<li><a href="{{ "contact" | append: url_suffix | relative_url }}">Contact</a></li>
-</ul>
+<a href="mailto:{{ site.email }}">Contact</a>
+ - <a href="{{ "privacy_policy" | append: url_suffix | relative_url }}">{{ privacy_label }}</a>
+ - <a href="{{ "imprint" | append: url_suffix | relative_url }}">{{ imprint_label }}</a><br />
+ <small>Copyright &copy; 2012-2018, Christophe SAUVEUR - {{ allrights_label }} </small>

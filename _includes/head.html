@@ -5,18 +5,9 @@
     <title>{{ page.title | default: site.title | escape }} - {% if page.permalink == Nil or page.permalink == "/fr/" %}{% if lang == "fr" %}Apprendre le japonais{% else %}Learn japanese{% endif %}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ "/assets/fonts/stylesheet.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-    {% if lang == "fr" %}
-        {% assign feed_url = "/fr/feed.xml" | relative_url %}
-    {% else %}
-        {% assign feed_url = "/feed.xml" | relative_url %}
-    {% endif %}
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ feed_url }}">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="/assets/js/js.cookie-2.1.4.min.js" type="text/javascript"></script>
     
     {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
@@ -25,20 +16,25 @@
     {%- if page.permalink == Nil and lang == "en" %}
     <script type="text/javascript">
     /* <![CCDATA[ */
-    $(function() {
-        var lang = Cookies.get("lang");
-        if (lang != "en") {
-            var langs = navigator.languages || navigator.language;
-            if (!Array.isArray(langs)) {
-                langs = [ langs ];
-            }
-            
-            var re = /^fr/i;
-            if (re.test(langs[0])) {
-                document.location = {{ "/fr/" | relative_url }};
-            }
-        }
-    });
+    	if (window.localStorage) {
+	        var lang = localStorage.getItem('lang');
+	        console.log(lang);
+	        if (lang === null) {
+	            var langs = navigator.languages || navigator.language;
+	            if (!Array.isArray(langs)) {
+	                langs = [ langs ];
+	            }
+	            
+	            var re = /^fr/i;
+	            if (re.test(langs[0])) {
+	            	lang = 'fr';
+	            	localStorage.setItem('lang', 'fr');
+	            }
+	        }
+	        if (lang == 'fr') {
+	        	document.location = {{ "/fr/" | relative_url }};
+	        }
+    	}
     /* ]]> */
     </script>
     {%- endif %}
