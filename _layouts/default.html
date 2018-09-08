@@ -5,6 +5,8 @@
 {% include head.html %}
   <body>
 {% include header.html %}
+	<h1>{{ page.title | default: site.title | escape }}</h1>
+
 	{{ content }}
 {% include footer.html %}
   </body>

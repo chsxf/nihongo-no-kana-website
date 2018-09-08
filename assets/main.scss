@@ -47,13 +47,13 @@ body {
 	margin: 20px 0;
 }
 
-#main-menu a {
+a {
 	font-weight: bold;
 	text-decoration: none;
 	color: #ff8000;
 }
 
-#main-menu a:hover {
+a:hover {
 	color: black;
 }
 
@@ -62,7 +62,7 @@ h1 {
 	font-weight: normal;
 }
 
-h2#version-label {
+h2 {
 	margin: 0;
 	
 	font-weight: normal;
