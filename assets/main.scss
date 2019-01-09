@@ -21,17 +21,12 @@ body {
 	right: 0;
 	bottom: 0;
 	
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
 #page-content {
 	position: relative;
-	
-	width: 760px;
-	
-	min-height: 860px;
 	
 	margin: 0 auto;
 	text-align: center;
@@ -45,6 +40,10 @@ body {
 #main-menu {
 	text-align: center;
 	margin: 20px 0;
+}
+
+#main-screenshots {
+	width: 100%;
 }
 
 a {
@@ -69,4 +68,26 @@ h2 {
 	font-size: 18px;
 	
 	color: #ff8000;
+}
+
+@media (min-height: 860px) {
+	#main-container {
+		display: flex;
+	}
+	
+	#page-content {
+		min-height: 860px;
+	}
+}
+
+@media (min-width: 768px) {
+	#page-content {
+		width: 760px;
+	}
+}
+
+@media (max-width: 768px) {
+	#main-container {
+		padding: 10px;
+	}
 }
