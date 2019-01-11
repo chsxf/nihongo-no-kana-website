@@ -31,6 +31,7 @@ permalink: pretty
 # Nihongo no Kana specific settings
 current_version: 3.0
 store_url: https://itunes.apple.com/[REGION]/app/id525236020
+google_analytics: UA-42500159-3
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

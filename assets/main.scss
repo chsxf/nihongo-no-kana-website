@@ -3,6 +3,7 @@
 ---
 
 $fontStack: 'SF Compact Display', sans-serif;
+$mainColor: #ff8000;
 
 * {
 	font-family: $fontStack;
@@ -46,10 +47,53 @@ body {
 	width: 100%;
 }
 
+#cookie-footer {
+	background: #ffefdf;
+	
+	padding: 20px;
+	padding-bottom: 30px;
+	text-align: center;
+	
+	border-top: 3px solid $mainColor;
+	
+	position: absolute;
+	
+	bottom: 0;
+	
+	visibility: hidden; 
+	
+	p {
+		margin: 0;
+	}
+	
+	div.buttons {
+		padding-top: 20px;
+	}
+	
+	.ko-button, .ok-button {
+		font-size: 1em;
+		font-weight: bold;
+		padding: 8px 30px;
+		border-radius: 5px;
+		border: 0;
+	}
+	
+	.ko-button {
+		margin-left: 20px;
+		background: white;
+		color: $mainColor;
+	}
+	
+	.ok-button {
+		background: $mainColor;
+		color: white;
+	}
+}
+
 a {
 	font-weight: bold;
 	text-decoration: none;
-	color: #ff8000;
+	color: $mainColor;
 }
 
 a:hover {
@@ -67,7 +111,7 @@ h2 {
 	font-weight: normal;
 	font-size: 18px;
 	
-	color: #ff8000;
+	color: $mainColor;
 }
 
 @media (min-height: 860px) {
@@ -84,10 +128,26 @@ h2 {
 	#page-content {
 		width: 760px;
 	}
+	
+	#cookie-footer {
+		left: 25px;
+		right: 25px;
+		
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		
+		border-left: 3px solid $mainColor;
+		border-right: 3px solid $mainColor;
+	}
 }
 
 @media (max-width: 768px) {
 	#main-container {
 		padding: 10px;
+	}
+	
+	#cookie-footer {
+		left: 0;
+		right: 0;
 	}
 }

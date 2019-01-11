@@ -13,3 +13,9 @@
 		</div>
 	</div>
 </main>
+
+{% if lang == 'fr' %}
+	{% include cookie-footer-fr.html %}
+{% else %}
+	{% include cookie-footer.html %}
+{% endif %}
