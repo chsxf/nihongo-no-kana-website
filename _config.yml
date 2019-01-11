@@ -15,10 +15,16 @@
 # in the templates via {{ site.myvariable }}.
 title: Nihongo no Kana
 email: contact@nihongonokana.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description_fr: > # this means to ignore newlines until "baseurl:"
+  Utilisez cette application pour apprendre les bases de l'écriture du japonais.
+  Nihongo no Kana vous permet de maîtriser rapidement les 92 signes et leurs dérivés
+  appartenant aux deux syllabaires que sont les Hiragana et les Katakana, bases nécessaires 
+  pour débuter l'apprentissage de la complexe écriture japonaise.
+description_en: > 
+  Use this app to learn the basics of japanese writing.
+  Nihongo no Kana teaches you how to master quickly the 92 signs and their derivatives
+  from the Hiragana and Katakana syllabaries, which are required basics to begin learning
+  complexe japanese writing.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
