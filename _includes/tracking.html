@@ -36,7 +36,7 @@ function loadGTag() {
 }
 
 function acceptCookies(_accepted) {
-	Cookies.set('cookies-acknowledged', _accepted);
+	Cookies.set('cookies-acknowledged', _accepted, { expires: 365 });
 	var cookieFooter = document.getElementById('cookie-footer');
 	cookieFooter.style.visibility = 'hidden';
 }
