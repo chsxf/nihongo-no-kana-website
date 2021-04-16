@@ -44,12 +44,11 @@ function acceptCookies(_accepted) {
 if (isDNTEnabled() == false) {
 	window.onload = function() {
 		var cookiesAcknowledged = Cookies.get('cookies-acknowledged');
-		console.log(cookiesAcknowledged);
 		if (cookiesAcknowledged == undefined) {
 			var cookieFooter = document.getElementById('cookie-footer');
 			cookieFooter.style.visibility = 'visible';
 		}
-		else if (cookiesAcknowledged === true) {
+		else if (JSON.parse(cookiesAcknowledged) === true) {
 			loadGTag();
 		}
 	}
