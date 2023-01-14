@@ -3,10 +3,7 @@
 		{% else %}
 			{% assign store_url = site.store_url | replace_first: "[REGION]/", "" %}
 		{% endif %} 
-		
 		<a href="{{ store_url }}" target="_blank" id="icon-app-store-badge"><img width="192" src="{{ "assets/img/[LANG]/app_store_badge.svg" | replace_first: '[LANG]', lang | relative_url }}" /></a>
-		
-		<a href="https://facebook.com/xhaleera" target="_blank" id="icon-facebook"><img width="48" src="{{ "assets/img/icon-facebook.svg" | relative_url }}" /></a>
 		
 		<div id="main-menu">
 			{% include menu.html %}
