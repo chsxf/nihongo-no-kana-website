@@ -26,9 +26,7 @@ description_en: >
   from the Hiragana and Katakana syllabaries, which are required basics to begin learning
   complexe japanese writing.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://nihongonokana.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
