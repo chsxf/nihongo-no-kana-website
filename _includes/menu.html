@@ -19,4 +19,4 @@
 <a href="mailto:{{ site.email }}">Contact</a>
  - <a href="{{ privacy_url | prepend: url_suffix | relative_url }}">{{ privacy_label }}</a>
  - <a href="{{ imprint_url | prepend: url_suffix | relative_url }}">{{ imprint_label }}</a><br />
- <small>Copyright &copy; 2012-2018, Christophe SAUVEUR - {{ allrights_label }} </small>
+ <small>Copyright &copy; 2012-{{ "now" | date: "%Y" }}, Christophe SAUVEUR - {{ allrights_label }} </small>

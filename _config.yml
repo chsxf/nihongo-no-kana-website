@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Nihongo no Kana
-email: contact@nihongonokana.com
+email: contact@xhaleera.com
 description_fr: > # this means to ignore newlines until "baseurl:"
   Utilisez cette application pour apprendre les bases de l'écriture du japonais.
   Nihongo no Kana vous permet de maîtriser rapidement les 92 signes et leurs dérivés
