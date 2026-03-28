@@ -36,15 +36,3 @@ permalink: pretty
 current_version: 3.5.1
 store_url: https://itunes.apple.com/[REGION]/app/id525236020
 google_analytics: UA-42500159-3
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
