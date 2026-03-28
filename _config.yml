@@ -33,7 +33,7 @@ markdown: kramdown
 permalink: pretty
 
 # Nihongo no Kana specific settings
-current_version: 3.0
+current_version: 3.5.1
 store_url: https://itunes.apple.com/[REGION]/app/id525236020
 google_analytics: UA-42500159-3
 
