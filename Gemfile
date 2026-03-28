@@ -30,3 +30,4 @@ end
 gem "wdm", "~> 0.1.1", :platforms => [:windows]
 
 gem "webrick"
+gem "csv"
